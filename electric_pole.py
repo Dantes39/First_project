@@ -2,11 +2,15 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def magnit_pole(q,r):
+              ***Функция закона Кулона***
     k = 9*10**9
     E = k*q/r**2
     return E
+            
 
 def ell_circl_plotter():
+             ***Функция, рисующая график электрическкого поля
+                В константу a подставлять значение, равное размеру окружности, который буде нужен***
     fig, ax = plt.subplots()
     a = 4
     x = np.arange(-a,a,0.01)
